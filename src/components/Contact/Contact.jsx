@@ -7,7 +7,7 @@ function Contact() {
     <div className="contact">
       <NavigationBar />
       <header className="contact-header">
-        <p>Contact</p>
+        <p>Contact - Coming soon!</p>
       </header>
     </div>
   );

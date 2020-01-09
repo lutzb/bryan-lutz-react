@@ -7,7 +7,7 @@ function Blog() {
     <div className="blog">
         <NavigationBar />
         <header className="blog-header">
-        <p>Blog</p>
+        <p>Blog - Coming soon!</p>
       </header>
     </div>
   );
