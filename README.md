@@ -1,4 +1,4 @@
-React app for my [personal website](https://bryanlutz.netlify.com/) currently hosted by Netlify.
+React app for my [personal website](https://bryan-lutz.com/) currently hosted by Netlify.
 
 ### `npm start`
 
