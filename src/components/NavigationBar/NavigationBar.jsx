@@ -1,13 +1,13 @@
 import React from 'react';
 import './NavigationBar.scss'
-import logo from '../../img/Murky.png'
+import Murky from '../../img/Murky.png'
 import { Link } from "react-router-dom";
 import { NavigationLinks } from '../../common/navigation-routes'
 
 const NavigationBar = () => (
     <div className="navigation-bar">
         <Link className='logo' to="/">
-            <img src={logo} className='logo' alt=''/>
+            <img src={Murky} className='logo' alt=''/>
         </Link>
         <div className='navigation-items'>
             {
