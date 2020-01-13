@@ -7,7 +7,7 @@ import { NavigationLinks } from '../../common/navigation-routes'
 const NavigationBar = () => (
     <div className="navigation-bar">
         <Link className='logo' to="/">
-            <img src={logo} className='logo'/>
+            <img src={logo} className='logo' alt=''/>
         </Link>
         <div className='navigation-items'>
             {
