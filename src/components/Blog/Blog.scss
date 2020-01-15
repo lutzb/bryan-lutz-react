@@ -1,15 +1,14 @@
 .blog {
   text-align: center;
-  background-color: #666666;
+
+  .blog-entries {
+      min-height: 50vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: calc(10px + 2vmin);
+      color: #666666;
+      background-color: whitesmoke;
+  }
 }
-  
-.blog-header {
-  min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-  

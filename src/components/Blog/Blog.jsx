@@ -1,14 +1,15 @@
 import React from 'react';
 import './Blog.scss';
 import NavigationBar from '../NavigationBar/NavigationBar'
+import BlogEntry1 from './BlogEntries/BlogEntry1'
 
 function Blog() {
   return (
     <div className="blog">
         <NavigationBar />
-        <header className="blog-header">
-        <p>Blog - Coming soon!</p>
-      </header>
+        <div className="blog-entries">
+          <BlogEntry1 />
+        </div>
     </div>
   );
 }
