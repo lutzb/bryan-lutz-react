@@ -5,10 +5,7 @@ import HomeTile from '../HomeTile/HomeTile'
 
 const HomeTiles = () => (
   <div className='home-tiles'>
-    <HomeTile text='This is a test!' />
-    <HomeTile text='This is a test!' />
-    <HomeTile text='This is a test!' />
-    <HomeTile text='This is a test!' />
+    <HomeTile text='Hello world' />
   </div>
 )
 

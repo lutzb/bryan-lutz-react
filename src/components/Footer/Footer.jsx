@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.scss'
-import LinkedInLogo from '../../img/LinkedIn.png'
+import LinkedInLogo from '../../img/LinkedIn-White-66px-TM.png'
 
 const Footer = () => (
   <div className='footer'>
