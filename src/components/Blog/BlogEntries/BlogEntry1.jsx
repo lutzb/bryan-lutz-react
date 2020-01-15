@@ -2,31 +2,14 @@ import React from 'react';
 import './BlogEntries.scss';
 
 import SyntaxHighlighter from 'react-syntax-highlighter';
-// import { monokaiSublime } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-// import { obsidian } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-
-import { obsidian } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 function BlogEntry1() {
   const codeString = `
-    public static String formatText(String text) 
+    public static List<int> JustDoIt(int count)
     {
-      StringBuffer result = new StringBuffer();
-      for (int n = 0; n < text.length(); ++n) {
-        int c = text.charAt(n);
-        if (c == '<') {
-          while(n < text.length() && text.charAt(n) != '/' && text.charAt(n) != '>')
-            n++;
-          if (n < text.length() && text.charAt(n) == '/')
-            n+=4;
-          else
-            n++;
-        }
-        if (n < text.length())
-          result.append(text.charAt(n));
-      }
-      return new String(result);
+        Console.WriteLine($"Hello {Name}!");
+        return new List<int>(new int[] { 1, 2, 3 })
     }
   `;
 
@@ -34,7 +17,7 @@ function BlogEntry1() {
     <div className='blog-entry'>
       <p classname='blog-text'>Hello world this is my blog and this is my code:</p>
 
-      <SyntaxHighlighter style={obsidian} className='code'>
+      <SyntaxHighlighter language='cs' style={dracula} className='code'>
         {codeString}
       </SyntaxHighlighter>
 
