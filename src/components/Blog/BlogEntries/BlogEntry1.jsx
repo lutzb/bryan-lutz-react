@@ -15,19 +15,20 @@ function BlogEntry1() {
       </p>
 
       <SyntaxHighlighter language='cs' style={dracula} className='code'>
-        {`
-          public string DoesSomething(int i)
-          {
-            return !function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.exports=
-            e.document?t(e,!0):function(e){if(!e.document)throw new Error("jQuery requires a window with a document"
-            );return t(e)}:t(e)}("undefined"!=typeof window?window:this,function(e,t){"use strict";var n=[],r=e.document
-            ,i=Object.getPrototypeOf,o=n.slice,a=n.concat,s=n.push,u=n.indexOf,l={},c=l.toString,f=l.hasOwnProperty
-            var LUX=LUX||{};LUX.samplerate=30;var LUX_t_start=Date.now();LUX=(function(){aA("lux.js evaluation start.")
-            ;var K="191";var a6=("undefined"!==typeof(LUX)&&"undefined"!==typeof(LUX.label)?LUX.label:document.title);
-            var Z="https://lux.speedcurve.com/error/";var aF="";var h=0;var at=5;function ag(i){h++;if(i&&"undefined"!
-            ==typeof(i.filename)&&"undefined"!==typeof(i.message)){if((-1!==i.filename.indexOf("/lux.js?")||-1!==i
-          }
-        `}
+{`
+  public string DoesSomething(int i)
+  {
+    return !function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.exports=
+    e.document?t(e,!0):function(e){if(!e.document)throw new Error("jQuery requires a window with a document"
+    );return t(e)}:t(e)}("undefined"!=typeof window?window:this,function(e,t){"use strict";var n=[],r=e.document
+    ,i=Object.getPrototypeOf,o=n.slice,a=n.concat,s=n.push,u=n.indexOf,l={},c=l.toString,f=l.hasOwnProperty
+    var LUX=LUX||{};LUX.samplerate=30;var LUX_t_start=Date.now();LUX=(function(){aA("lux.js evaluation start.")
+    ;var K="191";var a6=("undefined"!==typeof(LUX)&&"undefined"!==typeof(LUX.label)?LUX.label:document.title);
+    var Z="https://lux.speedcurve.com/error/";var aF="";var h=0;var at=5;function ag(i){h++;if(i&&"undefined"!
+    ==typeof(i.filename)&&"undefined"!==typeof(i.message)){if((-1!==i.filename.indexOf("/lux.js?")||-1!==i
+  }
+
+`}
       </SyntaxHighlighter>
 
       <p className='blog-text'>
@@ -46,13 +47,14 @@ function BlogEntry1() {
       </p>
 
       <SyntaxHighlighter language='cs' style={dracula} className='code'>
-        {`
-          @Test
-          public void x()
-          {
-              AssertEqual(null, DoesSomething(1));
-          }
-        `}
+{`
+  @Test
+  public void x()
+  {
+      AssertEqual(null, DoesSomething(1));
+  }
+
+`}
       </SyntaxHighlighter>
 
       <p className='blog-text'>
@@ -61,11 +63,12 @@ function BlogEntry1() {
       </p>
 
       <SyntaxHighlighter language='cs' style={dracula} className='code'>
-        {`
-          at Class1.test.DoesSomething.x() in ../ClassA/test/Test1.cs:line 14
-            Expected: null
-            But was:  "1"
-        `}
+{`
+  at Class1.test.DoesSomething.x() in ../ClassA/test/Test1.cs:line 14
+    Expected: null
+    But was:  "1"
+
+`}
       </SyntaxHighlighter>
 
       <p className='blog-text'>
@@ -74,13 +77,14 @@ function BlogEntry1() {
       </p>
 
       <SyntaxHighlighter language='cs' style={dracula} className='code'>
-        {`
-          @Test
-          public void DoesSomethingReturnsGivenNumber()
-          {
-              AssertEqual(1, DoesSomething(1));
-          }
-        `}
+{`
+  @Test
+  public void DoesSomethingReturnsGivenNumber()
+  {
+      AssertEqual("1", DoesSomething(1));
+  }
+
+`}
       </SyntaxHighlighter>
 
       <p className='blog-text'>
@@ -90,17 +94,40 @@ function BlogEntry1() {
       </p>
 
       <SyntaxHighlighter language='cs' style={dracula} className='code'>
-        {`
-          at Class1.test.DoesSomething.x() in ../ClassA/test/Test1.cs:line 21
-            Expected: "3"
-            But was:  "Fizz"
-        `}
+{`
+  at Class1.test.DoesSomething.x() in ../ClassA/test/Test1.cs:line 21
+    Expected: "3"
+    But was:  "Fizz"
+
+`}
       </SyntaxHighlighter>
 
       <p className='blog-text'>
-        We just found some a new characterization of this function.
+        We just found some new characterization of this function.  When we pass it a 3, it returns Fizz. Ok.. so We
+        can write a new test that documents this functionality:
       </p>
 
+      <SyntaxHighlighter language='cs' style={dracula} className='code'>
+{`
+  @Test
+  public void DoesSomethingReturnsGivenNumber()
+  {
+      AssertEqual("1", DoesSomething(1));
+  }
+
+  @Test
+  public void DoesSomethingReturnsFizzWhenGiven3()
+  {
+      AssertEqual("Fizz", DoesSomething(3));
+  }
+
+`}
+      </SyntaxHighlighter>
+
+      <p className='blog-text'>
+        This is a brute force way of expirementing and figuring out how some unreadable code works, but it relatively
+        puts things into perspective and allows you to find out the existing behavior of the system.
+      </p>
     </div>
   );
 }
