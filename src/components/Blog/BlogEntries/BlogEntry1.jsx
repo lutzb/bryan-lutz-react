@@ -16,16 +16,27 @@ function BlogEntry1() {
 
       <SyntaxHighlighter language='cs' style={dracula} className='code'>
 {`
-  public string DoesSomething(int i)
+  public string DoesSomething(int O)
   {
-    return !function(e,t){"use strict";"object"==typeof module&&"object"==typeof module.exports?module.exports=
-    e.document?t(e,!0):function(e){if(!e.document)throw new Error("jQuery requires a window with a document"
-    );return t(e)}:t(e)}("undefined"!=typeof window?window:this,function(e,t){"use strict";var n=[],r=e.document
-    ,i=Object.getPrototypeOf,o=n.slice,a=n.concat,s=n.push,u=n.indexOf,l={},c=l.toString,f=l.hasOwnProperty
-    var LUX=LUX||{};LUX.samplerate=30;var LUX_t_start=Date.now();LUX=(function(){aA("lux.js evaluation start.")
-    ;var K="191";var a6=("undefined"!==typeof(LUX)&&"undefined"!==typeof(LUX.label)?LUX.label:document.title);
-    var Z="https://lux.speedcurve.com/error/";var aF="";var h=0;var at=5;function ag(i){h++;if(i&&"undefined"!
-    ==typeof(i.filename)&&"undefined"!==typeof(i.message)){if((-1!==i.filename.indexOf("/lux.js?")||-1!==i
+    int l=1,i;
+    string c="zz",a="fi",b="bu";
+    l+=2;
+    i=l;
+    i+=2;
+    string s = "";
+    Console.WriteLine(
+      (
+        (O % l) > 0 && 1 > (
+          O % i
+        )
+      ) ? s = (a + c) :
+      (
+        1 > (O % l) && (O % i) > 0
+      ) ? s = (b + c) :
+      (1 > (O % l) && 1 > (O % i)) ? s = (a + c + b + c) : s = (O + "")
+    );
+
+    return s;
   }
 
 `}
