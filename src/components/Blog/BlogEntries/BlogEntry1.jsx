@@ -40,7 +40,7 @@ function BlogEntry1() {
         Introduce... Characterization Testing!
 
         Characterization Testing is a method of testing coined by Michael Feathers that focuses on determining
-        the actual behavior of a piece of software with the intent of understanding existing functionality before
+        the existing behavior of a piece of software with the intent of understanding functionality before
         a refactor or implementation of a new feature. The emphasis here, though, is on the existing behavior.  
         Let's write a test that we know will fail, but will give us some insight into the existing behavior of 
         the function:
@@ -72,7 +72,7 @@ function BlogEntry1() {
       </SyntaxHighlighter>
 
       <p className='blog-text'>
-        Ok, so it seems like when we give DoesSomething an integer, it returns that same integer.  So we can 
+        Ok, so it seems like when we give DoesSomething an integer, it returns that same integer.  So, we can 
         update our test to reflect the existing behavior:
       </p>
 
@@ -88,7 +88,7 @@ function BlogEntry1() {
       </SyntaxHighlighter>
 
       <p className='blog-text'>
-        We run this test and it passes just as we expect. So we've officially written and documented the the first
+        We run this test and it passes just as we expect. So we've officially written and documented the first
         known behavior of this function.  Now, just to see what happens, we start sending in other various numbers.
         First we started with 1... it returns 1.  We try 2... it returns 2.  We try 3... and something magical happens:
       </p>
@@ -103,7 +103,7 @@ function BlogEntry1() {
       </SyntaxHighlighter>
 
       <p className='blog-text'>
-        We just found some new characterization of this function.  When we pass it a 3, it returns Fizz. Ok.. so We
+        We just found a new characterization of this function.  When we pass it a 3, it returns Fizz. So, we
         can write a new test that documents this functionality:
       </p>
 
@@ -125,8 +125,16 @@ function BlogEntry1() {
       </SyntaxHighlighter>
 
       <p className='blog-text'>
-        This is a brute force way of expirementing and figuring out how some unreadable code works, but it relatively
-        puts things into perspective and allows you to find out the existing behavior of the system.
+        After tinkering with the inputs, we can come up with a decent suite of tests that accurately document
+        the existing behavior of the function. Now, it's important to note that these tests only document what the 
+        function current does. They cannot tell whether or not the function is correct (or not) according to the
+        business requirements. However, once we document all known existing behavior, this puts us a decent position
+        to verify with the business that what the code is doing is actually what they want.
+        <br />
+        <br />
+        Characterization testing is a brute force way of experimenting and figuring out how some unreadable code
+        works, but it put a relatively perspective on complex, poorly written software and allows us to find out the 
+        truth behind the behavior of the system.
       </p>
     </div>
   );
