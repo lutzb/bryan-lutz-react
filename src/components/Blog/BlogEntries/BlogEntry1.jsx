@@ -36,9 +36,11 @@ function BlogEntry1() {
         and shouldnt be harmed. Instead, you think to yourself, how can we figure out what this load of crap 
         actually does? This code has no unit tests, and was written by one guy that no longer works with the
         company.  Classic.
-        
+        <br />
+        <br />
         Introduce... Characterization Testing!
-
+        <br />
+        <br />
         Characterization Testing is a method of testing coined by Michael Feathers that focuses on determining
         the existing behavior of a piece of software with the intent of understanding functionality before
         a refactor or implementation of a new feature. The emphasis here, though, is on the existing behavior.  
