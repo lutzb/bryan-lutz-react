@@ -148,6 +148,9 @@ function BlogEntry1() {
         Characterization testing is a brute force way of experimenting and figuring out how some unreadable code
         works, but it put a relatively perspective on complex, poorly written software and allows us to find out the 
         truth behind the behavior of the system.
+        <br />
+        <br />
+        And as always, just when you thought you could escape it, it always turns out to be FizzBuzz.
       </p>
     </div>
   );
