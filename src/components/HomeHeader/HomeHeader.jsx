@@ -3,7 +3,7 @@ import './HomeHeader.scss'
 
 const HomeHeader = () => (
   <header className="home-header">
-    <h2>Bryan J. Lutz</h2>
+    <h1>Bryan J. Lutz</h1>
     <p>
       Software Developer by day<br />
       Professional Esports enthusiast by night<br />
