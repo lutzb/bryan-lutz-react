@@ -8,7 +8,7 @@ function BlogEntry1() {
   return (
     <div className='blog-entry'>
       <h1>Working With Legacy Code -- Characterization Testing</h1>
-      <h2>Written by Bryan Lutz - Last Updated 10/30/2020</h2>
+      <h4>Written by Bryan Lutz - Last Updated 10/30/2020</h2>
       <p className='blog-text'>
         Suppose you get put onto a project that is to work with a codebase over 15 years old that you have
         very little to no knowledge about. You're tasked with adding a simple feature that seems relatively
