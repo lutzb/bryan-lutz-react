@@ -8,13 +8,13 @@ const Footer = () => (
   <div className='footer'>
     <p>Bryan Lutz • Columbus, Ohio • 43221</p>
     <div>
-      <a href='https://www.linkedin.com/in/bryan-lutz-080a6a57/' target='_blank'>
+      <a href='https://www.linkedin.com/in/bryan-lutz-080a6a57/' target='_blank' rel='noopener noreferrer'>
         <img src={LinkedInLogo} className='social-logo' alt=''/>
       </a>
-      <a href='https://github.com/lutzb' target='_blank'>
+      <a href='https://github.com/lutzb' target='_blank' rel='noopener noreferrer'>
         <img src={GitHubLogo} className='social-logo' alt=''/>
       </a>
-      <a href='https://twitter.com/blutzer' target='_blank'>
+      <a href='https://twitter.com/blutzer' target='_blank' rel='noopener noreferrer'>
         <img src={TwitterLogo} className='social-logo' alt=''/>
       </a>
     </div>
