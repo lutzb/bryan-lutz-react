@@ -7,7 +7,7 @@ function About() {
     <div className="about">
         <NavigationBar />
         <header className="about-header">
-        <p>About - Coming soon! TM</p>
+        <p>About - Coming soon! TM!!!!!</p>
       </header>
     </div>
   );
